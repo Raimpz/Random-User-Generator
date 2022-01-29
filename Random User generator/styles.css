@@ -1,12 +1,12 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-h2{
+h2 {
   text-transform: capitalize;
 }
-h3{
+h3 {
   font-size: 1.75rem;
 }
 /* 
@@ -14,23 +14,22 @@ h3{
 Global Styling
 =======================
 */
-:root{
+:root {
   --light-shadow: 0 0 5px 0 black;
   --dark-shadow: 0 0 10px 0 black;
 }
-
 
 /* 
 =======================
 NAVBAR
 =======================
 */
-nav{
+nav {
   background: #fff;
   height: 4rem;
-  box-shadow: var(--light-shadow)
+  box-shadow: var(--light-shadow);
 }
-.nav-center{
+.nav-center {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -42,21 +41,21 @@ nav{
 SECTION
 =======================
 */
-main{
+main {
   height: calc(100vh - 4rem);
 }
-.section-center{
+.section-center {
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
-.user-container{
+.user-container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.one-random-user{
+.one-random-user {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,17 +64,17 @@ main{
   box-shadow: var(--dark-shadow);
   padding: 2rem 0;
 }
-.user-name{
+.user-name {
   text-align: center;
   margin: 0.5rem 0;
 }
-.img-container{
+.img-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.user-img{
+.user-img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -83,19 +82,19 @@ main{
   display: block;
   border: 1px solid black;
 }
-.other-user-info{
+.other-user-info {
   display: flex;
   column-gap: 1rem;
 }
-@media screen and (max-width: 750px){
-  .other-user-info{
+@media screen and (max-width: 750px) {
+  .other-user-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 /* icons */
-.info-btn{
+.info-btn {
   box-shadow: 0 0 5px 1px black;
   min-width: 6rem;
   min-height: 6rem;
@@ -113,88 +112,87 @@ main{
   margin-bottom: 0.25rem;
 }
 /* email */
-.email-info{
+.email-info {
   margin: 1rem 0;
   text-align: center;
 }
-.email-info i{
+.email-info i {
   font-size: 1.5rem;
 }
 /* phone */
-.phone-info{
+.phone-info {
   margin: 1rem 0;
   text-align: center;
 }
-.phone-info i{
+.phone-info i {
   font-size: 1.5rem;
 }
 /* age */
-.age-info{
+.age-info {
   margin: 1rem 0;
   text-align: center;
 }
-.age-info i{
+.age-info i {
   font-size: 1.5rem;
 }
 /* country */
-.country-info{
+.country-info {
   margin: 1rem 0;
   text-align: center;
 }
-.country-info i{
+.country-info i {
   font-size: 1.5rem;
 }
 /* country */
-.username-info{
+.username-info {
   margin: 1rem 0;
   text-align: center;
 }
-.username-info i{
+.username-info i {
   font-size: 1.5rem;
 }
 /* country */
-.password-info{
+.password-info {
   margin: 1rem 0;
   text-align: center;
 }
-.password-info i{
+.password-info i {
   font-size: 1.5rem;
 }
 /* icon active */
-.active{
+.active {
   box-shadow: 0 0 5px 1px red;
 }
-@media screen and (max-height: 800px){
-    h2{
-      font-size: 1.25rem;
-    }
-    h3{
-      font-size: 1.25rem;
-    }
-    .user-img{
-      width: 100px;
-      height: 100px;
-    }
-    .info-btn{
-      min-width: 4rem;
-      min-height: 4rem;
-      padding: 0.25rem;
-    }
-    h4{
-      font-size: 0.75rem;
-    }
-    .one-random-user{
-      height: 96%;
-    }
-
+@media screen and (max-height: 800px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .user-img {
+    width: 100px;
+    height: 100px;
+  }
+  .info-btn {
+    min-width: 4rem;
+    min-height: 4rem;
+    padding: 0.25rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  .one-random-user {
+    height: 96%;
+  }
 }
 
 /* display info */
-.display-info{
+.display-info {
   margin: 2rem 0;
 }
 /* BTN */
-.btn{
+.btn {
   padding: 0.5rem 1.5rem;
   font-size: 1.25rem;
   text-transform: capitalize;
@@ -203,24 +201,26 @@ main{
   background: none;
   box-shadow: var(--light-shadow);
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   background: rgb(228, 228, 228);
   color: rgb(82, 80, 80);
 }
-.btn-on-click{
+
+.btn:active {
   box-shadow: 0 0 0 1px black;
 }
-@media screen and (max-height: 800px){
-    .btn{
-      padding: 0.25rem 1.5rem;
-      font-size: 1rem;
-    }
-    .display-info{
-      margin: 1rem 0;
-    }
-    .display{
-      font-size: 1rem;
-      text-align: center;
-    }
+
+@media screen and (max-height: 800px) {
+  .btn {
+    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
+  }
+  .display-info {
+    margin: 1rem 0;
+  }
+  .display {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
