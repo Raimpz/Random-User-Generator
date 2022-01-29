@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- css -->
-  <link rel="stylesheet" href="./styles.css">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <!-- js -->
-  <script defer type="module" src="./app.js"></script>
-  <title>Random User Generator</title>
-</head>
-<body>
-  <nav>
-    <div class="nav-center">
-      <h2>Welcome to random user Generator</h2>
-    </div>
-  </nav>
-  <main>
-    <section class="section-center">
-      <div class="user-container">
-        <div class="one-random-user">
-          <!-- title and img -->
-          <div class="user-name-and-img">
-            <h3 class="user-name">Who's the mystical person?</h3>
-            <div class="img-container">
-              <img src="./Images/question mark.png" alt="" class="user-img">
-            </div>
-          </div>
-          <!-- icons and info -->
-          <div class="other-user-info">
-            <div class="email-info info-btn">
-              <i class="fas fa-envelope"></i>
-              <h4>E-mail</h4>
-            </div>
-            <div class="phone-info info-btn">
-              <i class="fas fa-phone"></i>
-              <h4>phone</h4>
-            </div>
-            <div class="age-info info-btn">
-              <i class="fas fa-user-tie"></i>
-              <h4>age</h4>
-            </div>
-            <div class="country-info info-btn">
-              <i class="fas fa-globe-europe"></i>
-              <h4>country</h4>
-            </div>
-            <div class="username-info info-btn">
-              <i class="fas fa-file-signature"></i>
-              <h4>username</h4>
-            </div>
-            <div class="password-info info-btn">
-              <i class="fas fa-user-lock"></i>
-              <h4>password</h4>
-            </div>
-          </div>
-          <!-- display info here -->
-          <div class="display-info">
-            <h1 class="display"></h1>
-          </div>
-          <!-- btnUser -->
-          <button class="btn">Click for random user</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <!-- js -->
+    <script defer src="./app.js"></script>
+
+    <title>Random User Generator</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h2>Welcome to random user Generator</h2>
       </div>
-    </section>
-  </main>
-</body>
+    </nav>
+    <main>
+      <section class="section-center">
+        <div class="user-container">
+          <div class="one-random-user">
+            <!-- title and img -->
+            <div class="user-name-and-img">
+              <h3 class="user-name">Who's the mystical person?</h3>
+              <div class="img-container">
+                <img src="./Images/question mark.png" alt="" class="user-img" />
+              </div>
+            </div>
+            <!-- icons and info -->
+            <div class="other-user-info">
+              <div class="email-info info-btn" data-type="email">
+                <i class="fas fa-envelope"></i>
+                <h4>E-mail</h4>
+              </div>
+              <div class="phone-info info-btn" data-type="phone">
+                <i class="fas fa-phone"></i>
+                <h4>phone</h4>
+              </div>
+              <div class="age-info info-btn" data-type="age">
+                <i class="fas fa-user-tie"></i>
+                <h4>age</h4>
+              </div>
+              <div class="country-info info-btn" data-type="country">
+                <i class="fas fa-globe-europe"></i>
+                <h4>country</h4>
+              </div>
+              <div class="username-info info-btn" data-type="username">
+                <i class="fas fa-file-signature"></i>
+                <h4>username</h4>
+              </div>
+              <div class="password-info info-btn" data-type="password">
+                <i class="fas fa-user-lock"></i>
+                <h4>password</h4>
+              </div>
+            </div>
+            <!-- display info here -->
+            <div class="display-info">
+              <h1 class="display"></h1>
+            </div>
+            <!-- btnUser -->
+            <button class="btn">Click for random user</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
